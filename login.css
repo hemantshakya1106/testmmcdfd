@@ -1,0 +1,737 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+ .client-header {
+	 display: flex;
+	 height: 90px;
+	 box-shadow: -1.23px -1.58px 7px #757575;
+	 align-items: center;
+	 justify-content: space-between;
+	 background-color: #fff;
+}
+ @media (max-width: 768px) {
+	 .client-header {
+		 height: 60px;
+	}
+}
+ @media (min-width: 769px) {
+	 .d-none-desktop {
+		 display: none !important;
+	}
+}
+ @media (max-width: 768px) {
+	 .d-none-mobile {
+		 display: none !important;
+	}
+}
+ .client-logo {
+	 background-color: #007bb3;
+	 display: inline-flex;
+	 padding: 0 60px 0 15px;
+	 align-items: center;
+	 height: 100%;
+	 position: relative;
+}
+ @media (max-width: 768px) {
+	 .client-logo {
+		 height: 60px;
+	}
+}
+ .client-logo-diagonal {
+	 background-color: #fff;
+	 height: 100%;
+	 position: absolute;
+	 right: -40px;
+	 transform: skewX(-41deg);
+	 width: 80px;
+}
+ @media (max-width: 768px) {
+	 .client-logo-diagonal {
+		 right: -30px;
+		 transform: skewX(-45deg);
+		 width: 75px;
+	}
+}
+ .client-login-message {
+	 color: #fff;
+	 text-shadow: 0px 3px 6px rgba(16, 11, 11, 0.21);
+	 margin-top: 177px;
+	 font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	 font-weight: 600;
+	 font-size: 34px;
+	 line-height: 39px;
+}
+ @media (max-width: 768px) {
+	 .client-login-message {
+		 display: none;
+	}
+}
+ .container {
+	 display: flex;
+	 justify-content: space-between;
+}
+ @media (max-width: 768px) {
+	 .container {
+		 flex-direction: column;
+		 padding: 50px 15px;
+		 margin: 0;
+		 max-width: none;
+	}
+}
+ .client-footer {
+	 background-color: #333;
+	 padding: 28px 15px;
+	 display: flex;
+	 justify-content: space-between;
+	 color: #fff;
+	 font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	 position: absolute;
+	 bottom: 0;
+	 font-size: 16px;
+	 width: 100%;
+}
+ @media (max-width: 768px) {
+	 .client-footer {
+		 flex-direction: column-reverse;
+	}
+}
+ .client-footer-links {
+	 display: flex;
+}
+ @media (max-width: 768px) {
+	 .client-footer-links {
+		 margin-top: 13px;
+		 flex-wrap: wrap;
+		 flex-direction: column;
+	}
+}
+ .client-footer-links > div {
+	 line-height: 1;
+}
+ .client-footer-height {
+	 height: 124px;
+	 width: 100%;
+}
+ @media (max-width: 768px) {
+	 .client-footer-height {
+		 height: 175px;
+	}
+}
+ .client-footer .copyright {
+	 font-size: 14px;
+	 font-weight: 400;
+	 color: inherit;
+	 margin-top: 30px;
+}
+ .client-footer a {
+	 font-size: 14px;
+	 font-weight: 600;
+	 color: inherit;
+	 margin-right: 20px;
+	 white-space: nowrap;
+}
+ .client-footer .download {
+	 font-size: 14px;
+	 text-align: right;
+}
+ @media (max-width: 768px) {
+	 .client-footer .download {
+		 text-align: left;
+	}
+}
+ .client-footer .download-links {
+	 display: flex;
+	 justify-content: space-between;
+	 flex-wrap: wrap;
+}
+ @media (max-width: 768px) {
+	 .client-footer .download-links {
+		 justify-content: flex-start;
+		 margin: 10px 0 15px 0;
+	}
+}
+ .client-footer .download-links a {
+	 margin: 0 0 0 8px;
+}
+ @media (max-width: 768px) {
+	 .client-footer .download-links a {
+		 margin: 0 20px 0 0;
+	}
+	 .client-footer .download-links a:last-child {
+		 margin-right: 0;
+	}
+}
+ body {
+	 font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+ body .login-bg-image {
+	 top: 90px;
+	 min-height: calc(100vh - 90px - 124px);
+	 position: static;
+}
+ body #okta-sign-in {
+	 width: 430px;
+}
+ @media (max-width: 768px) {
+	 body #okta-sign-in {
+		 width: 100%;
+	}
+}
+ body #okta-sign-in.auth-container {
+	 border-radius: 10px;
+}
+ body #okta-sign-in.auth-container .mfa-beacon-container {
+	 bottom: -92px;
+	 width: 75px;
+	 height: 75px;
+}
+ body #okta-sign-in.auth-container .mfa-beacon-container .auth-beacon-border {
+	 border: 1px solid #007bb3;
+	 top: 0;
+	 bottom: 0;
+	 right: 0;
+	 left: 0;
+}
+ body #okta-sign-in.auth-container .mfa-beacon-container .factors-dropdown-wrap .dropdown {
+	 border-radius: 0;
+}
+ body #okta-sign-in.auth-container .mfa-beacon-container .factors-dropdown-wrap .dropdown .link-button.option-selected {
+	 height: 24px;
+	 width: 21px;
+	 border-radius: 0;
+}
+ body #okta-sign-in.auth-container .mfa-beacon-container .factors-dropdown-wrap .dropdown .link-button.option-selected .icon-dm {
+	 right: 4px;
+}
+ body #okta-sign-in.auth-container .mfa-beacon-container .okta-dropdown-list {
+	 border-radius: 6px;
+	 box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+ body #okta-sign-in.auth-container .mfa-beacon-container .okta-dropdown-list .dropdown-list-title {
+	 font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+ body #okta-sign-in.auth-container .mfa-beacon-container .okta-dropdown-list .okta-dropdown-option {
+	 border-bottom: 0;
+}
+ body #okta-sign-in.auth-container .mfa-beacon-container .okta-dropdown-list .okta-dropdown-option:not(.option-disabled):hover, body #okta-sign-in.auth-container .mfa-beacon-container .okta-dropdown-list .okta-dropdown-option:not(.option-disabled):focus-within {
+	 background: #f3f3f3;
+}
+ body #okta-sign-in.auth-container .mfa-beacon-container .okta-dropdown-list .okta-dropdown-option a {
+	 font-size: 16px;
+}
+ body #okta-sign-in.auth-container .mfa-verify {
+	 margin-top: 76px;
+	 margin-bottom: 112px;
+}
+ body #okta-sign-in.auth-container .mfa-verify h2.okta-form-title {
+	 margin-bottom: 6px;
+}
+ body #okta-sign-in.auth-container .mfa-verify .okta-form-subtitle {
+	 color: #737375;
+	 margin-bottom: 15px;
+}
+ body #okta-sign-in.auth-container .mfa-verify .mfa-send-email-content {
+	 text-align: center;
+}
+ body #okta-sign-in.auth-container .mfa-verify .o-form-fieldset {
+	 width: 100%;
+}
+ body #okta-sign-in.auth-container .mfa-verify .o-form-control {
+	 border-radius: 0;
+}
+ body #okta-sign-in.auth-container .mfa-verify .button:not(.button-primary) {
+	 margin-top: 0;
+	 margin-bottom: 15px;
+	 min-width: 100%;
+	 width: 100%;
+	 margin-left: auto;
+	 background: #0f8d3c;
+	 border-radius: 0;
+	 color: #fff;
+	 border-color: #0f8d3c;
+}
+ body #okta-sign-in.auth-container .mfa-verify .button:not(.button-primary):active, body #okta-sign-in.auth-container .mfa-verify .button:not(.button-primary):hover, body #okta-sign-in.auth-container .mfa-verify .button:not(.button-primary):focus {
+	 background-color: #169745;
+	 border-color: #169745;
+}
+ body #okta-sign-in.auth-container .mfa-verify .button:not(.button-primary).disabled {
+	 background: #fff;
+	 color: #737375;
+	 border-color: #737375;
+	 cursor: not-allowed;
+}
+ body #okta-sign-in.auth-container .mfa-verify .button:not(.button-primary).disabled:active, body #okta-sign-in.auth-container .mfa-verify .button:not(.button-primary).disabled:hover, body #okta-sign-in.auth-container .mfa-verify .button:not(.button-primary).disabled:focus {
+	 background: #fff;
+	 color: #737375;
+	 border-color: #737375;
+}
+ body #okta-sign-in.auth-container .enroll-email, body #okta-sign-in.auth-container .enroll-sms, body #okta-sign-in.auth-container .enroll-call, body #okta-sign-in.auth-container .enroll-activate-email {
+	 margin-top: 76px;
+	 margin-bottom: 32px;
+}
+ body #okta-sign-in.auth-container .enroll-email .o-form-button-bar, body #okta-sign-in.auth-container .enroll-sms .o-form-button-bar, body #okta-sign-in.auth-container .enroll-call .o-form-button-bar, body #okta-sign-in.auth-container .enroll-activate-email .o-form-button-bar {
+	 margin-bottom: 48px;
+}
+ body #okta-sign-in.auth-container .enroll-email .enroll-call-phone, body #okta-sign-in.auth-container .enroll-sms .enroll-call-phone, body #okta-sign-in.auth-container .enroll-call .enroll-call-phone, body #okta-sign-in.auth-container .enroll-activate-email .enroll-call-phone {
+	 width: 243px;
+}
+ body #okta-sign-in.auth-container .enroll-email .okta-form-divider, body #okta-sign-in.auth-container .enroll-sms .okta-form-divider, body #okta-sign-in.auth-container .enroll-call .okta-form-divider, body #okta-sign-in.auth-container .enroll-activate-email .okta-form-divider {
+	 border-width: 0;
+}
+ body #okta-sign-in.auth-container .enroll-email .o-form-fieldset.enroll-sms-phone, body #okta-sign-in.auth-container .enroll-sms .o-form-fieldset.enroll-sms-phone, body #okta-sign-in.auth-container .enroll-call .o-form-fieldset.enroll-sms-phone, body #okta-sign-in.auth-container .enroll-activate-email .o-form-fieldset.enroll-sms-phone {
+	 float: left;
+	 width: calc(100% - 165px);
+}
+ body #okta-sign-in.auth-container .enroll-email .call-request-button.link-button.button, body #okta-sign-in.auth-container .enroll-sms .call-request-button.link-button.button, body #okta-sign-in.auth-container .enroll-call .call-request-button.link-button.button, body #okta-sign-in.auth-container .enroll-activate-email .call-request-button.link-button.button {
+	 margin-bottom: 9px;
+	 border-radius: 0;
+	 background-image: none;
+	 background-color: #007bb3;
+	 border: none;
+	 max-height: 40px;
+	 color: #fff;
+}
+ body #okta-sign-in.auth-container .enroll-email .call-request-button.link-button.button:hover, body #okta-sign-in.auth-container .enroll-sms .call-request-button.link-button.button:hover, body #okta-sign-in.auth-container .enroll-call .call-request-button.link-button.button:hover, body #okta-sign-in.auth-container .enroll-activate-email .call-request-button.link-button.button:hover {
+	 background-color: #006098;
+	 background-image: none;
+}
+ body #okta-sign-in.auth-container .enroll-email .link-button.link-button-disabled.button, body #okta-sign-in.auth-container .enroll-sms .link-button.link-button-disabled.button, body #okta-sign-in.auth-container .enroll-call .link-button.link-button-disabled.button, body #okta-sign-in.auth-container .enroll-activate-email .link-button.link-button-disabled.button {
+	 background: #fff !important;
+	 color: #333 !important;
+	 border: 1px solid #ccc !important;
+	 border-radius: 0;
+	 cursor: not-allowed;
+}
+ body #okta-sign-in.auth-container .enroll-email .link-button.link-button-disabled.button:hover, body #okta-sign-in.auth-container .enroll-sms .link-button.link-button-disabled.button:hover, body #okta-sign-in.auth-container .enroll-call .link-button.link-button-disabled.button:hover, body #okta-sign-in.auth-container .enroll-activate-email .link-button.link-button-disabled.button:hover, body #okta-sign-in.auth-container .enroll-email .link-button.link-button-disabled.button:active, body #okta-sign-in.auth-container .enroll-sms .link-button.link-button-disabled.button:active, body #okta-sign-in.auth-container .enroll-call .link-button.link-button-disabled.button:active, body #okta-sign-in.auth-container .enroll-activate-email .link-button.link-button-disabled.button:active, body #okta-sign-in.auth-container .enroll-email .link-button.link-button-disabled.button:focus, body #okta-sign-in.auth-container .enroll-sms .link-button.link-button-disabled.button:focus, body #okta-sign-in.auth-container .enroll-call .link-button.link-button-disabled.button:focus, body #okta-sign-in.auth-container .enroll-activate-email .link-button.link-button-disabled.button:focus {
+	 background: #fff !important;
+	 color: #333 !important;
+	 border-color: #ccc !important;
+}
+ body #okta-sign-in.auth-container .enroll-email .sms-request-button.link-button.button, body #okta-sign-in.auth-container .enroll-sms .sms-request-button.link-button.button, body #okta-sign-in.auth-container .enroll-call .sms-request-button.link-button.button, body #okta-sign-in.auth-container .enroll-activate-email .sms-request-button.link-button.button {
+	 float: right;
+	 margin: 21px 0 0 0;
+	 height: 45px;
+	 max-height: 45px;
+	 border-radius: 0;
+	 width: 152px;
+	 background-image: none;
+	 background-color: #007bb3;
+	 border: none;
+	 color: #fff;
+}
+ body #okta-sign-in.auth-container .enroll-email .sms-request-button.link-button.button:hover, body #okta-sign-in.auth-container .enroll-sms .sms-request-button.link-button.button:hover, body #okta-sign-in.auth-container .enroll-call .sms-request-button.link-button.button:hover, body #okta-sign-in.auth-container .enroll-activate-email .sms-request-button.link-button.button:hover {
+	 background-color: #006098;
+	 background-image: none;
+}
+ body #okta-sign-in.auth-container .enroll-email .o-form-select, body #okta-sign-in.auth-container .enroll-sms .o-form-select, body #okta-sign-in.auth-container .enroll-call .o-form-select, body #okta-sign-in.auth-container .enroll-activate-email .o-form-select {
+	 border: 0 !important;
+}
+ body #okta-sign-in.auth-container .enroll-email .o-form-select .chzn-single, body #okta-sign-in.auth-container .enroll-sms .o-form-select .chzn-single, body #okta-sign-in.auth-container .enroll-call .o-form-select .chzn-single, body #okta-sign-in.auth-container .enroll-activate-email .o-form-select .chzn-single {
+	 height: 45px;
+	 border-color: #ccc;
+	 border-radius: 0;
+}
+ body #okta-sign-in.auth-container .enroll-email .o-form-select .chzn-single span, body #okta-sign-in.auth-container .enroll-sms .o-form-select .chzn-single span, body #okta-sign-in.auth-container .enroll-call .o-form-select .chzn-single span, body #okta-sign-in.auth-container .enroll-activate-email .o-form-select .chzn-single span {
+	 line-height: 45px;
+}
+ body #okta-sign-in.auth-container .enroll-email .o-form-select .chzn-single div, body #okta-sign-in.auth-container .enroll-sms .o-form-select .chzn-single div, body #okta-sign-in.auth-container .enroll-call .o-form-select .chzn-single div, body #okta-sign-in.auth-container .enroll-activate-email .o-form-select .chzn-single div {
+	 top: 0;
+}
+ body #okta-sign-in.auth-container .enroll-email .o-form-select .chzn-single div b, body #okta-sign-in.auth-container .enroll-sms .o-form-select .chzn-single div b, body #okta-sign-in.auth-container .enroll-call .o-form-select .chzn-single div b, body #okta-sign-in.auth-container .enroll-activate-email .o-form-select .chzn-single div b {
+	 background-position: 0 12px;
+}
+ body #okta-sign-in.auth-container .enroll-email .o-form-control, body #okta-sign-in.auth-container .enroll-sms .o-form-control, body #okta-sign-in.auth-container .enroll-call .o-form-control, body #okta-sign-in.auth-container .enroll-activate-email .o-form-control {
+	 border-radius: 0;
+}
+ body #okta-sign-in.auth-container.main-container {
+	 margin: 60px 0;
+	 font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+ @media (max-width: 768px) {
+	 body #okta-sign-in.auth-container.main-container {
+		 margin: 0;
+		 overflow: hidden;
+	}
+}
+ @media (max-width: 330px) {
+	 body #okta-sign-in.auth-container.main-container {
+		 overflow: auto;
+	}
+}
+ body #okta-sign-in.auth-container.main-container .recovery-question .o-form-button-bar, body #okta-sign-in.auth-container.main-container .password-reset .o-form-button-bar {
+	 margin-bottom: 32px;
+}
+ body #okta-sign-in.auth-container .okta-sign-in-header {
+	 display: flex;
+	 align-items: center;
+	 padding: 14px 30px 14px 22px;
+	 justify-content: center;
+	 border-bottom: 1px solid #ccc;
+}
+ body #okta-sign-in.auth-container .okta-sign-in-header .auth-org-logo {
+	 max-height: none;
+	 margin: 0 10px 0 0;
+}
+ @media (max-width: 768px) {
+	 body #okta-sign-in.auth-container .okta-sign-in-header {
+		 padding-left: 0 !important;
+	}
+}
+ body #okta-sign-in.auth-container .okta-sign-in-header .sub-header {
+	 margin-bottom: 5px;
+	 font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	 color: #737375;
+}
+ body #okta-sign-in.auth-container .o-form-button-bar {
+	 padding-bottom: 0;
+}
+ body #okta-sign-in.auth-container .auth-content {
+	 padding: 18px 30px 0 30px;
+}
+ @media (max-width: 768px) {
+	 body #okta-sign-in.auth-container .auth-content {
+		 padding: 20px 15px 0 15px;
+		 max-width: none;
+	}
+}
+ body #okta-sign-in.auth-container .auth-content .reset-email-sent-icon {
+	 display: flex;
+	 margin: 15px auto 18px auto;
+}
+ body #okta-sign-in.auth-container .auth-content .reset-email-sent-icon + h2.okta-form-title {
+	 color: #2e2840;
+	 font-weight: 500;
+	 margin-bottom: 7px;
+}
+ body #okta-sign-in.auth-container .auth-content .reset-email-sent-icon + h2.okta-form-title + .okta-form-subtitle {
+	 color: #737375;
+	 font-size: 16px;
+}
+ body #okta-sign-in.auth-container .auth-content .o-form-content {
+	 margin-bottom: 10px;
+	 padding-bottom: 10px;
+}
+ body #okta-sign-in.auth-container .auth-content .forgot-password {
+	 margin-bottom: 20px;
+}
+ body #okta-sign-in.auth-container .auth-content .mobile-recovery-hint {
+	 margin: 15px 0 25px 0;
+	 top: 0;
+	 font-size: 14px;
+	 color: #737375;
+	 font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	 padding-bottom: 0;
+}
+ body #okta-sign-in.auth-container h2 {
+	 font-size: 20px;
+	 font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	 color: #333;
+	 font-weight: 600;
+}
+ body #okta-sign-in.auth-container h2.okta-form-title {
+	 font-size: 18px;
+	 font-weight: 500;
+	 line-height: 22px;
+	 margin: 7px 0 20px 0;
+	 color: #b3134e;
+}
+ body #okta-sign-in.auth-container .link-button {
+	 font-size: 16px;
+	 font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	 font-weight: 400;
+	 color: #737375;
+	 border: 1px solid #ccc;
+	 height: 45px;
+	 display: flex;
+	 align-items: center;
+	 padding: 0;
+	 justify-content: center;
+	 background-color: #fff;
+	 cursor: pointer;
+}
+ body #okta-sign-in.auth-container .link-button.sms-request-button {
+	 margin-left: 13px;
+	 min-width: 152px;
+}
+ body #okta-sign-in.auth-container input[type="submit"].button-primary, body #okta-sign-in.auth-container .button-primary {
+	font-size: 16px;
+    font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    background-image: none;
+    background-color: #007bb3;
+    border: none;
+    padding: 20px 30px;
+    line-height: normal;
+    height: auto;
+	border-radius: 10px;
+}
+ body #okta-sign-in.auth-container input[type="submit"].button-primary:hover, body #okta-sign-in.auth-container .button-primary:hover {
+	 background-color: #006098;
+	 background-image: none;
+}
+ body #okta-sign-in.auth-container input[type="submit"].button-primary.link-button, body #okta-sign-in.auth-container .button-primary.link-button {
+	 margin-bottom: 12px;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 color: #fff;
+}
+ body #okta-sign-in.auth-container input[type="submit"].button-primary.link-button:last-child, body #okta-sign-in.auth-container .button-primary.link-button:last-child {
+	 margin-bottom: 10px;
+}
+ body #okta-sign-in.auth-container .help-links .footer-link {
+	 padding: 20px 0;
+	 border-top: 1px solid #ccc;
+	 margin: 36px -30px 0 -30px;
+}
+ body #okta-sign-in.auth-container .help-links .footer-link .link {
+	 font-size: 16px;
+	 font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+ body #okta-sign-in.auth-container .help-links li {
+	 text-align: center;
+	 font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	 color: #737375;
+	 margin-top: 24px;
+	 font-size: 16px;
+}
+ body #okta-sign-in.auth-container .help-links li .next-line-text {
+	 font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	 color: #737375;
+	 margin-bottom: 10px;
+	 margin-top: -14px;
+	 line-height: 19px;
+}
+ body #okta-sign-in.auth-container .help-links li:first-child {
+	 margin-top: 18px;
+}
+ body #okta-sign-in.auth-container .help-links li:empty {
+	 display: none;
+}
+ body #okta-sign-in.auth-container .link {
+	 color: #007bb3;
+	 font-size: 16px;
+	 font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	 font-weight: 400;
+}
+ body #okta-sign-in.auth-container .link:link, body #okta-sign-in.auth-container .link:visited {
+	 color: #007bb3;
+}
+ body #okta-sign-in.auth-container .link:hover, body #okta-sign-in.auth-container .link:active {
+	 color: #006098;
+}
+ body #okta-sign-in.auth-container .link.help-link-recoverypage {
+	 margin: 20px -30px 20px -30px;
+	 padding-top: 20px;
+	 border-top: 1px solid #ccc;
+	 display: block;
+	 text-align: center;
+}
+ body #okta-sign-in.auth-container .link.js-back, body #okta-sign-in.auth-container .link[data-se="signout-link"] {
+	 margin-bottom: 16px;
+}
+ body #okta-sign-in.auth-container .link.send-email-link {
+	 margin-top: 20px;
+}
+ body #okta-sign-in.auth-container .okta-form-label {
+	 padding: 0 0 5px 0;
+}
+ body #okta-sign-in.auth-container .o-form-fieldset {
+	 margin-bottom: 9px !important;
+}
+ body #okta-sign-in.auth-container .o-form-fieldset:last-child {
+	 margin-bottom: 0 !important;
+}
+ body #okta-sign-in.auth-container .o-form-fieldset.required-field label::after {
+	 content: "*";
+	 color: #f42b36;
+}
+ body #okta-sign-in.auth-container .o-form-fieldset.enroll-sms-phone {
+	 width: auto;
+}
+ body #okta-sign-in.auth-container .o-form-fieldset .o-form-explain:empty {
+	 display: none;
+}
+ body #okta-sign-in.auth-container .o-form-fieldset .custom-checkbox {
+	 margin: -7px 0;
+}
+ body #okta-sign-in.auth-container .o-form-fieldset .o-form-input-error .o-form-explain {
+	 word-break: break-word;
+}
+ body #okta-sign-in .enroll-factor-list {
+	 margin-top: 37px;
+	 margin-bottom: 0;
+}
+ body #okta-sign-in .enroll-factor-list .list-title {
+	 color: #b3134e;
+	 font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	 font-weight: 400;
+	 padding-bottom: 15px;
+	 margin-bottom: 0;
+}
+ body #okta-sign-in .enroll-factor-list .enroll-factor-label {
+	 font-family: "Montserrat", Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	 font-weight: 400;
+	 color: #2e2840;
+	 font-size: 16px;
+	 margin-bottom: 5px;
+	 line-height: 19px;
+}
+ body #okta-sign-in .enroll-factor-list .enroll-factor-description {
+	 width: 100%;
+}
+ body #okta-sign-in .enroll-factor-list .enroll-factor-description p {
+	 font-size: 16px;
+	 color: #737375;
+	 font-weight: 400;
+}
+ body #okta-sign-in .enroll-factor-list .enroll-factor-button {
+	 display: inline-block;
+}
+ body #okta-sign-in .enroll-factor-list .enroll-factor-button .button {
+	 border: 1px solid #007bb3;
+	 background: #fff;
+	 color: #007bb3;
+	 padding: 0 13px;
+	 border-radius: 0;
+}
+ body #okta-sign-in .enroll-factor-list .enroll-factor-button .button:hover, body #okta-sign-in .enroll-factor-list .enroll-factor-button .button:active, body #okta-sign-in .enroll-factor-list .enroll-factor-button .button:focus {
+	 border-color: #006098;
+	 color: #006098;
+}
+ body #okta-sign-in .enroll-factor-list .enroll-factor-row {
+	 margin-bottom: 24px;
+}
+ body #okta-sign-in .enroll-factor-list .enroll-factor-row:last-child {
+	 margin-bottom: 0;
+}
+ body #okta-sign-in .enroll-factor-list .enroll-factor-row.enroll-factor-row-min .enroll-factor-description {
+	 display: flex;
+	 justify-content: center;
+	 flex-direction: column;
+}
+ body #okta-sign-in .enroll-factor-list .enroll-factor-row.enroll-factor-row-min .enroll-factor-label {
+	 margin-bottom: 0;
+}
+ body #okta-sign-in .enroll-factor-list .enroll-factor-row.enroll-factor-row-min .enroll-factor-button {
+	 display: none;
+}
+ body #okta-sign-in .enroll-factor-list .enroll-factor-row .success-16-green {
+	 height: 24px;
+}
+ body #okta-sign-in .enroll-factor-list .enroll-factor-icon-container {
+	 margin-right: 24px;
+}
+ body #okta-sign-in .enroll-factor-list .enroll-factor-icon-container .enroll-factor-icon {
+	 border-color: #007bb3;
+	 height: 44px;
+	 width: 44px;
+	 background-size: contain;
+}
+ body #okta-sign-in .password-requirements--header {
+	 color: #2e2840;
+	 font-size: 16px;
+	 margin-top: 32px;
+}
+ body #okta-sign-in .password-requirements--list {
+	 padding-bottom: 16px;
+}
+ body #okta-sign-in .password-requirements--list-item {
+	 font-size: 14px;
+	 color: #707070;
+	 line-height: 16px;
+	 margin-bottom: 8px;
+}
+ body #okta-sign-in .password-requirements--list-item::marker {
+	 color: #b3134e;
+	 font-size: 18px;
+}
+ body #okta-sign-in .recovery-challenge .o-form-fieldset-container {
+	 align-items: flex-start;
+}
+ body #okta-sign-in .recovery-challenge .o-form-fieldset-container .button {
+	 margin-top: 22px !important;
+}
+ body #okta-sign-in .recovery-challenge .o-form-fieldset-container .button:not(.button-primary) {
+	background: #0f8d3c;
+    color: #fff;
+    border-color: #0f8d3c;
+    padding: 10px;
+    line-height: 18px;
+    margin-top: 25px !important;
+    height: auto;
+	border-radius: 8px;
+
+}
+ body #okta-sign-in .recovery-challenge .o-form-fieldset-container .button:not(.button-primary):active, body #okta-sign-in .recovery-challenge .o-form-fieldset-container .button:not(.button-primary):hover, body #okta-sign-in .recovery-challenge .o-form-fieldset-container .button:not(.button-primary):focus {
+	 background-color: #169745;
+	 border-color: #169745;
+}
+ body #okta-sign-in .recovery-challenge .o-form-fieldset-container .button:not(.button-primary).disabled {
+	 background: #fff;
+	 color: #737375;
+	 border-color: #737375;
+	 cursor: not-allowed;
+}
+ body #okta-sign-in .recovery-challenge .o-form-fieldset-container .button:not(.button-primary).disabled:active, body #okta-sign-in .recovery-challenge .o-form-fieldset-container .button:not(.button-primary).disabled:hover, body #okta-sign-in .recovery-challenge .o-form-fieldset-container .button:not(.button-primary).disabled:focus {
+	 background: #fff;
+	 color: #737375;
+	 border-color: #737375;
+}
+ body #okta-sign-in .recovery-challenge .send-email-link-wrapper {
+	 margin-top: 20px;
+	 display: flex;
+	 justify-content: center;
+	 line-height: 22px;
+	 font-size: 16px;
+}
+ body #okta-sign-in .recovery-challenge .send-email-link-wrapper .link.send-email-link {
+	 width: auto;
+	 margin-top: 0;
+	 margin-left: 5px;
+}
+ body #okta-sign-in .o-form label {
+	 font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	 color: #737375;
+	 font-weight: 400;
+	 font-size: 16px;
+}
+ body #okta-sign-in .o-form .custom-checkbox label {
+	 font-size: 16px;
+	 padding-top: 8px;
+}
+ body #okta-sign-in .o-form .o-form-input .o-form-control {
+	 height: 45px;
+	 border: 1px solid #ccc;
+}
+ body #okta-sign-in .o-form .o-form-input .o-form-control input {
+	 font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	 font-size: 16px;
+	 color: #333;
+}
+ body #okta-sign-in .auth-footer {
+	 text-align: center;
+	 display: flex;
+	 flex-direction: column;
+}
+/*To hide the password eye button in IE*/
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+/* To hide the autofill button in safari */
+input::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  display: none;
+  pointer-events: none;
+  height: 0;
+  width: 0;
+  margin: 0;
+}
+ 
+#okta-sign-in .forgot-password-call-enabled .o-form-fieldset-container .button, #okta-sign-in .forgot-password-sms-enabled .o-form-fieldset-container .button {
+    padding: 10px 20px;
+    line-height: 18px;
+    border: 1px solid #007bb3;
+    height: auto;
+    border-radius: 8px;
+} 
