@@ -647,19 +647,19 @@
  body #okta-sign-in .recovery-challenge .o-form-fieldset-container {
 	 align-items: flex-start;
 }
- body #okta-sign-in .recovery-challenge .o-form-fieldset-container .button {
-	 margin-top: 22px !important;
-}
+
  body #okta-sign-in .recovery-challenge .o-form-fieldset-container .button:not(.button-primary) {
 	background: #0f8d3c;
-    color: #fff;
-    border-color: #0f8d3c;
-    padding: 10px;
-    line-height: 18px;
-    margin-top: 25px !important;
-    height: auto;
+    	color: #fff;
+    	border-color: #0f8d3c;
+    	padding: 10px;
+    	line-height: 18px;
+    	margin-top: 25px !important;
+    	height: auto;
 	border-radius: 8px;
-
+}
+ body #okta-sign-in .recovery-challenge .o-form-fieldset-container .button {
+	 margin-top: 22px !important;
 }
  body #okta-sign-in .recovery-challenge .o-form-fieldset-container .button:not(.button-primary):active, body #okta-sign-in .recovery-challenge .o-form-fieldset-container .button:not(.button-primary):hover, body #okta-sign-in .recovery-challenge .o-form-fieldset-container .button:not(.button-primary):focus {
 	 background-color: #169745;
