@@ -654,7 +654,7 @@
     	border-color: #0f8d3c;
     	padding: 10px;
     	line-height: 18px;
-    	margin-top: 25px !important;
+    	margin-top: 22px !important;
     	height: auto;
 	border-radius: 8px;
 }
@@ -734,3 +734,6 @@ input::-webkit-credentials-auto-fill-button {
     height: auto;
     border-radius: 8px;
 } 
+body #okta-sign-in .o-form .o-form-input .o-form-input-name-passCode {
+    height: 40px;
+}
