@@ -731,7 +731,6 @@ input::-webkit-credentials-auto-fill-button {
 #okta-sign-in .forgot-password-call-enabled .o-form-fieldset-container .button, #okta-sign-in .forgot-password-sms-enabled .o-form-fieldset-container .button {
     padding: 10px 20px;
     line-height: 18px;
-    border: 1px solid #007bb3;
     height: auto;
     border-radius: 8px;
 } 
